@@ -1,0 +1,11 @@
+const telex = '(31)99191-4866'; 
+const regexLiteral = /\([0-9]{2}\)9[0-9]{4}-[0-9]{4}/;
+const stringTest1 = 'Exemplo: hello world!!!';
+const stringTest2 = 'Hello world!!!';
+const regexInit = /^hello/i;
+const regexFin = /!!!$/;
+console.log(regexLiteral.test(telex));
+console.log(regexInit.test(stringTest1));
+console.log(regexInit.test(stringTest2));
+console.log(regexFin.test(stringTest1));
+console.log(regexFin.test(stringTest2));
